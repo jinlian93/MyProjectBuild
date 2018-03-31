@@ -19,6 +19,8 @@ import java.util.List;
  */
 public class BaseApp extends Application {
 
+    
+    
     public static List<Activity> activities = new LinkedList<>();
 
     //以下属性应用于整个应用程序，合理利用资源，减少资源浪费
