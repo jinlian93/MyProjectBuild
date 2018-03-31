@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/activity_main"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+
+    tools:context="com.example.mymvpdemo.ui.activity.MainActivity">
+  <com.example.mymvpdemo.view.NoScrollViewPager
+      android:id="@+id/nvp"
+      android:layout_above="@+id/rg_group"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginBottom="0.5dp"
+      android:layout_weight="1"
+      android:background="@color/white">
+
+  </com.example.mymvpdemo.view.NoScrollViewPager>
+  <RadioGroup
+    android:layout_alignParentBottom="true"
+    android:id="@+id/rg_group"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+
+    android:orientation="horizontal"
+    android:paddingTop="2dp">
+
+    <RadioButton
+        android:id="@+id/rb_home"
+        style="@style/BottomTabStyle"
+        android:checked="true"
+        android:drawableTop="@drawable/btn_tab_home_selector"
+        android:text="首页"
+        android:textColor="@drawable/btn_main_text_selector"
+        android:textSize="9sp" />
+
+    <RadioButton
+        android:id="@+id/rb_shop"
+        style="@style/BottomTabStyle"
+        android:drawableTop="@drawable/btn_tab_shop_selector"
+        android:text="店铺"
+        android:textColor="@drawable/btn_main_text_selector"
+        android:textSize="9sp" />
+
+    <RadioButton
+        android:id="@+id/rb_customer"
+        style="@style/BottomTabStyle"
+        android:drawableTop="@drawable/btn_tab_customer_selector"
+        android:text="客户"
+        android:textColor="@drawable/btn_main_text_selector"
+        android:textSize="9sp" />
+
+    <RadioButton
+        android:id="@+id/rb_mine"
+        style="@style/BottomTabStyle"
+        android:drawableTop="@drawable/btn_tab_my_selector"
+        android:text="安防"
+        android:textColor="@drawable/btn_main_text_selector"
+        android:textSize="9sp" />
+</RadioGroup>
+
+</RelativeLayout>
