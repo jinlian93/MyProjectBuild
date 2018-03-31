@@ -9,6 +9,7 @@ import com.example.mymvpdemo.util.LogUtils;
  */
 public class AppConst {
     public static final String TAG = "CSDN_LQR";
+
     public static final int DEBUGLEVEL = LogUtils.LEVEL_ALL;//日志输出级别
 
     /*================== 广播Action begin ==================*/
